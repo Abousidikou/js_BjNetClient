@@ -21,7 +21,7 @@ export let ndt7core = (function() {
           finish()
           return
         }
-        console.log(testName,ev.data)
+        //console.log(testName,ev.data)
         callback('measurement', ev.data)
       }
       // Kill the worker after the timeout. This force the browser to
