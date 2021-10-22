@@ -3,8 +3,12 @@
 onmessage = function (ev) {
   'use strict'
   let url = new URL(ev.data.href)
-  url.protocol = (url.protocol === 'https:') ? 'wss:' : 'ws:'
+  //url.protocol = (url.protocol === 'https:') ? 'wss:' : 'ws:'
+  url.protocol = 'wss'
+  url.hostname = 'monitor.uac.bj'
+  url.port = '4444'
   url.pathname = '/ndt/v7/download'
+  console.log(url.toString())
   const sock = new WebSocket(url.toString(), 'net.measurementlab.ndt.v7')
   sock.onclose = function () {
     postMessage(null)

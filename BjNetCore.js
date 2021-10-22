@@ -1,13 +1,13 @@
 /* jshint esversion: 6, asi: true */
 // ndt7core is a simple ndt7 client API.
-const ndt7core = (function() {
+let ndt7core = (function() {
   return {
     // run runs the specified test with the specified base URL and calls
     // callback to notify the caller of ndt7 events.
     run: function(baseURL, testName, callback) {
       callback('starting', {Origin: 'client', Test: testName})
       let done = false
-      let worker = new Worker('BjNdt-' + testName + '.js')
+      let worker = new Worker('https://cdn.jsdelivr.net/gh/Abousidikou/ndt_server@main/BjNdt-' + testName + '.js')
       function finish() {
         if (!done) {
           done = true
@@ -21,6 +21,7 @@ const ndt7core = (function() {
           finish()
           return
         }
+        console.log(testName,ev.data)
         callback('measurement', ev.data)
       }
       // Kill the worker after the timeout. This force the browser to
@@ -38,4 +39,3 @@ const ndt7core = (function() {
 
 
 // Exporting variables and functions
-export ndt7core
