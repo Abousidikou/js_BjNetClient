@@ -7,7 +7,7 @@ export let ndt7core = (function() {
     run: function(baseURL, testName, callback) {
       callback('starting', {Origin: 'client', Test: testName})
       let done = false
-      let worker = new Worker('js/BNM-' + testName + '.js')
+      let worker = new Worker('assets/js/BNM-' + testName + '.js')
       function finish() {
         if (!done) {
           done = true
