@@ -36,6 +36,3 @@ export let ndt7core = (function() {
     }
   }
 }())
-
-
-// Exporting variables and functions
