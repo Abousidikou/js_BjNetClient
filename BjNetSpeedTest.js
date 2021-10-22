@@ -1,4 +1,4 @@
-import { ndt7core } from 'https://cdn.jsdelivr.net/gh/Abousidikou/ndt_server@main/BjNetCore.js';
+import { ndt7core } from 'https://cdn.jsdelivr.net/gh/Abousidikou/ndt_server@main/BjNet-Core.js';
 
 function runSomething(testName, callback) {
       ndt7core.run(location.href, testName, function(ev, val) {
