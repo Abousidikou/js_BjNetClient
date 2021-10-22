@@ -14,7 +14,7 @@ sudo mkdir -p assets/js
 
 ## Clone repository
 ```bash
-git clone https://github.com/Abousidikou/ndt_server.git && cd ndt_server
+git clone https://github.com/Abousidikou/js_BjNetClient.git && cd js_BjNetClient
 ```
 ## Copy BNM files from ndt_server to assets/js
 ```bash
