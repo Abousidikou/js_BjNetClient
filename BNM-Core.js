@@ -7,7 +7,8 @@ export let ndt7core = (function() {
     run: function(baseURL, testName, callback) {
       callback('starting', {Origin: 'client', Test: testName})
       let done = false
-      let worker = new Worker('https://cdn.jsdelivr.net/gh/Abousidikou/ndt_server@main/BNM-' + testName + '.js')
+
+      let worker = new Worker('//cdn.jsdelivr.net/gh/Abousidikou/ndt_server@main/BNM-' + testName + '.js')
       function finish() {
         if (!done) {
           done = true
