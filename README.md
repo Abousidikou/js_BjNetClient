@@ -1,4 +1,4 @@
-# ndt_server
+# JS_BjNetClient
 This is javascript client for Background Network Testing.
 This execute script at page loading and lauch test on https://monitor.uac.bj:4444
 
