@@ -1,6 +1,6 @@
 /* jshint esversion: 6, asi: true */
 // ndt7core is a simple ndt7 client API.
-let ndt7core = (function() {
+export let ndt7core = (function() {
   return {
     // run runs the specified test with the specified base URL and calls
     // callback to notify the caller of ndt7 events.
