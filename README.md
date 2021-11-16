@@ -26,4 +26,9 @@ sudo cp ./BNM* "root path of your website"/assets/js
 <script type="module" src="assets/js/BNM-SpeedTest.js"></script>
 ```
 
+## Changing Server for Test
+Change hostname in BNM-download and BNM-upload files 
+```bash
+hostname='new hostname'
+```
 
